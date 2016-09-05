@@ -1,40 +1,67 @@
 package hammingNumbers;
 
-        import org.junit.Assert;
-        import org.junit.Test;
+import org.junit.Assert;
+import org.junit.Test;
 
-        import static org.junit.Assert.*;
+import static org.junit.Assert.*;
 
 /**
  * Created by vkukanauskas on 29/07/2016.
  */
 public class HammingTest {
 
+
     @Test
-    public void testFirst(){
+    public void testFirst() {
         Assert.assertEquals(1, Hamming.hamming(1));
     }
+
     @Test
-    public void testSecond(){
+    public void testSecond() {
         Assert.assertEquals(2, Hamming.hamming(2));
     }
+
     @Test
-    public void testThird(){
+    public void testThird() {
         Assert.assertEquals(3, Hamming.hamming(3));
     }
 
     @Test
-    public void testForth(){
+    public void testForth() {
         Assert.assertEquals(4, Hamming.hamming(4));
     }
 
     @Test
-    public void testFifth(){
+    public void testFifth() {
         Assert.assertEquals(5, Hamming.hamming(5));
     }
+
     @Test
-    public void testSix(){
+    public void testSix() {
         Assert.assertEquals(6, Hamming.hamming(6));
+    }
+
+    @Test
+    public void testCopyPasta(){
+        Assert.assertEquals("hamming(1) should be 1", 1, Hamming.hamming(1));
+        Assert.assertEquals("hamming(2) should be 2", 2, Hamming.hamming(2));
+        Assert.assertEquals("hamming(3) should be 3", 3, Hamming.hamming(3));
+        Assert.assertEquals("hamming(4) should be 4", 4, Hamming.hamming(4));
+        Assert.assertEquals("hamming(5) should be 5", 5, Hamming.hamming(5));
+        Assert.assertEquals("hamming(6) should be 6", 6, Hamming.hamming(6));
+        Assert.assertEquals("hamming(7) should be 8", 8, Hamming.hamming(7));
+        Assert.assertEquals("hamming(8) should be 9", 9, Hamming.hamming(8));
+        Assert.assertEquals("hamming(9) should be 10", 10, Hamming.hamming(9));
+        Assert.assertEquals("hamming(10) should be 12", 12, Hamming.hamming(10));
+        Assert.assertEquals("hamming(11) should be 15", 15, Hamming.hamming(11));
+        Assert.assertEquals("hamming(12) should be 16", 16, Hamming.hamming(12));
+        Assert.assertEquals("hamming(13) should be 18", 18, Hamming.hamming(13));
+        Assert.assertEquals("hamming(14) should be 20", 20, Hamming.hamming(14));
+        Assert.assertEquals("hamming(15) should be 24", 24, Hamming.hamming(15));
+        Assert.assertEquals("hamming(16) should be 25", 25, Hamming.hamming(16));
+        Assert.assertEquals("hamming(17) should be 27", 27, Hamming.hamming(17));
+        Assert.assertEquals("hamming(18) should be 30", 30, Hamming.hamming(18));
+        Assert.assertEquals("hamming(19) should be 32", 32, Hamming.hamming(19));
     }
 
 }
